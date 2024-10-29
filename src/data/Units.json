@@ -1,0 +1,98 @@
+{
+    "new_antioch": {
+        "elites": [
+            { "type": "Lieutenant", "ducats": 70, "min": 1, "max": 1 },
+            { "type": "Trench Cleric", "ducats": 60, "min": 0, "max": 1 },
+            { "type": "Sniper Priest", "ducats": 50, "min": 0, "max": 2 }
+        ],
+        "troops": [
+            { "type": "Yeoman", "ducats": 40, "min": 0, "max": null },
+            { "type": "Shocktrooper", "ducats": 45, "min": 0, "max": 5 },
+            { "type": "Combat Engineer", "ducats": 80, "min": 0, "max": 2 },
+            {
+                "type": "Mechanized Heavy Infantry",
+                "ducats": 85,
+                "min": 0,
+                "max": 3
+            },
+            { "type": "Combat Medic", "ducats": 65, "min": 0, "max": 1 }
+        ]
+    },
+    "trench_pilgrims": {
+        "elites": [
+            { "type": "War Prophet", "ducats": 80, "min": 1, "max": 1 },
+            { "type": "Castigator", "ducats": 50, "min": 0, "max": 1 },
+            { "type": "Communicant", "ducats": 100, "min": 0, "max": 1 }
+        ],
+        "troops": [
+            { "type": "Trench Pilgrim", "ducats": 30, "min": 0, "max": null },
+            {
+                "type": "Ecclesiastic Prisoners",
+                "ducats": 55,
+                "min": 0,
+                "max": null
+            },
+            { "type": "Stigmatic Nun", "ducats": 50, "min": 0, "max": 4 },
+            { "type": "Anchorite Shrine", "ducats": 140, "min": 0, "max": 1 }
+        ]
+    },
+    "iron_sultanate": {
+        "elites": [
+            { "type": "Yüzbaşı Captain", "ducats": 70, "min": 1, "max": 1 },
+            { "type": "Jabirean Alchemist", "ducats": 55, "min": 0, "max": 1 },
+            { "type": "Sultanate Assassin", "ducats": 85, "min": 0, "max": 1 }
+        ],
+        "troops": [
+            { "type": "Azeb", "ducats": 25, "min": 0, "max": null },
+            { "type": "Sultanate Sapper", "ducats": 50, "min": 0, "max": 2 },
+            { "type": "Lions of Jabir", "ducats": 60, "min": 0, "max": 2 },
+            { "type": "Janissary", "ducats": 55, "min": 0, "max": 6 },
+            { "type": "Brazen Bull", "ducats": 100, "min": 0, "max": 1 }
+        ]
+    },
+    "black_grail": {
+        "elites": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }],
+        "troops": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }]
+    },
+    "heretics": {
+        "elites": [
+            { "type": "Heretic Priest", "ducats": 80, "min": 1, "max": 1 },
+            {
+                "type": "Heretic Death Commando",
+                "ducats": 90,
+                "min": 0,
+                "max": 1
+            },
+            { "type": "Heretic Chorister", "ducats": 65, "min": 0, "max": 1 }
+        ],
+        "troops": [
+            { "type": "Heretic Trooper", "ducats": 30, "min": 0, "max": null },
+            {
+                "type": "Annointed Heavy Trooper",
+                "ducats": 95,
+                "min": 0,
+                "max": 5
+            },
+            {
+                "type": "War Wolf Assault Beast",
+                "ducats": 140,
+                "min": 0,
+                "max": 1
+            },
+            {
+                "type": "Artillery Witch",
+                "ducats": 90,
+                "min": 0,
+                "max": 2
+            }
+        ]
+    },
+    "court": {
+        "elites": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }],
+        "troops": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }]
+    },
+    "mercenaries": {
+        "elites": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }],
+        "troops": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }]
+    }
+}
