@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 
 export default function Home() {
     return (
-        <main>
+        <main className="container mx-auto">
             <Header />
             <Roster />
             <Footer />

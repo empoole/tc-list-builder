@@ -86,7 +86,16 @@ export const MercenaryUnitNames = [
     'Observer',
     'Mamluk Faris',
 ] as const
-export const CourtUnitNames = [] as const
+export const CourtUnitNames = [
+    'Preator',
+    'Hell Knight',
+    'Yoke Fiend',
+    'Sorcerer',
+    'Desecrated Saint',
+    'Wretched',
+    'Hunter of the Left Hand Path',
+    'Pit Locust',
+] as const
 
 type NewAntiochUnitNamesType = (typeof NewAntiochUnitNames)[number]
 type TrenchPilgrimUnitNamesType = (typeof TrenchPilgrimUnitNames)[number]

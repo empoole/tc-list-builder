@@ -12,6 +12,7 @@ interface RosterDataContextType {
     faction: FactionsType
     ducats: number
     updateRosterData: (newSettings: Partial<RosterData>) => void
+    clearRosterData: () => void
 }
 
 const defaultValues: RosterData = {
@@ -22,6 +23,7 @@ const defaultValues: RosterData = {
 const RosterDataContext = createContext<RosterDataContextType>({
     ...defaultValues,
     updateRosterData: () => {},
+    clearRosterData: () => {},
 })
 
 export const RosterDataProvider = ({
@@ -35,8 +37,14 @@ export const RosterDataProvider = ({
         setValues({ ...values, ...newValues })
     }
 
+    const clearRosterData = () => {
+        setValues(defaultValues)
+    }
+
     return (
-        <RosterDataContext.Provider value={{ ...values, updateRosterData }}>
+        <RosterDataContext.Provider
+            value={{ ...values, updateRosterData, clearRosterData }}
+        >
             {children}
         </RosterDataContext.Provider>
     )

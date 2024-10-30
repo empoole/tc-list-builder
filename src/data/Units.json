@@ -51,8 +51,23 @@
         ]
     },
     "black_grail": {
-        "elites": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }],
-        "troops": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }]
+        "elites": [
+            { "type": "Lord of Tumours", "ducats": 130, "min": 1, "max": 1 },
+            { "type": "Plague Knight", "ducats": 60, "min": 0, "max": 1 },
+            { "type": "Corpse Guard", "ducats": 55, "min": 0, "max": 2 }
+        ],
+        "troops": [
+            {
+                "type": "Hounds of the Black Grail",
+                "ducats": 55,
+                "min": 0,
+                "max": 3
+            },
+            { "type": "Grail Thrall", "ducats": 30, "min": 0, "max": null },
+            { "type": "Fly Thrall", "ducats": 30, "min": 0, "max": null },
+            { "type": "Herald of Beelzebub", "ducats": 50, "min": 0, "max": 4 },
+            { "type": "Amalgam", "ducats": 150, "min": 0, "max": 1 }
+        ]
     },
     "heretics": {
         "elites": [
@@ -91,8 +106,62 @@
         "elites": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }],
         "troops": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }]
     },
-    "mercenaries": {
-        "elites": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }],
-        "troops": [{ "type": "", "ducats": 0, "min": 0, "max": 0 }]
-    }
+    "mercenaries": [
+        {
+            "type": "Combat Medic",
+            "glory": 2,
+            "min": 0,
+            "max": 1,
+            "factions": ["trench_pilgrims", "new_antioch"]
+        },
+        {
+            "type": "Witchburner",
+            "glory": 5,
+            "min": 0,
+            "max": 1,
+            "factions": ["trench_pilgrims", "new_antioch"]
+        },
+        {
+            "type": "Communicant Anti-Tank Hunter",
+            "glory": 5,
+            "min": 0,
+            "max": 1,
+            "factions": ["trench_pilgrims", "new_antioch"]
+        },
+        {
+            "type": "Mendelist Ammo Monk",
+            "glory": 2,
+            "min": 0,
+            "max": 1,
+            "factions": ["trench_pilgrims", "new_antioch"]
+        },
+        {
+            "type": "Sin Eater",
+            "glory": 6,
+            "min": 0,
+            "max": 1,
+            "factions": ["heretic_legions", "black_grail", "court"]
+        },
+        {
+            "type": "Goetic Warlock",
+            "glory": 4,
+            "min": 0,
+            "max": 1,
+            "factions": ["heretic_legions", "court"]
+        },
+        {
+            "type": "Observer",
+            "glory": 3,
+            "min": 0,
+            "max": 1,
+            "factions": ["new_antioch", "trench_pilgrims"]
+        },
+        {
+            "type": "Mamluk Faris",
+            "glory": 4,
+            "min": 0,
+            "max": 1,
+            "factions": ["iron_sultanate"]
+        }
+    ]
 }

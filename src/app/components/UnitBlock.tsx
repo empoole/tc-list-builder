@@ -15,33 +15,37 @@ export default function UnitBlock({ unitData }: { unitData: Unit }) {
         // get unit data
         // subtract ducats
         // if not enough ducats can't add unit
+        return unit
     }
 
     return (
         <UnitDataProvider>
-            <div className="flex space-between">
-                <label htmlFor="name">
-                    Name:
-                    <input type="text" name="name" />
-                </label>
-                <label htmlFor="type">
-                    Type:
-                    <select
-                        name="type"
-                        id="type"
-                        onChange={(e) => updateRoster(e.target.value)}
-                    >
-                        {units.map((unit) => (
-                            <option>{unit}</option>
-                        ))}
-                    </select>
-                </label>
-            </div>
-            <StatBlock unit={unitData} />
-            <div>
-                <label htmlFor="equipment">
-                    <input type="text" name="equipment" />
-                </label>
+            <div className="border my-4 p-4">
+                <div className="flex justify-between ">
+                    <label htmlFor="name">
+                        Name: <input type="text" name="name" />
+                    </label>
+                    <label htmlFor="type">
+                        Type:{' '}
+                        <select
+                            name="type"
+                            id="type"
+                            onChange={(e) => updateRoster(e.target.value)}
+                        >
+                            {units.map((unit, i) => (
+                                <option key={i}>{unit}</option>
+                            ))}
+                        </select>
+                    </label>
+                </div>
+                <div className="flex justify-between">
+                    <StatBlock unit={unitData} />
+                    <section>
+                        <label htmlFor="equipment">
+                            Equipment: <input type="text" name="equipment" />
+                        </label>
+                    </section>
+                </div>
             </div>
         </UnitDataProvider>
     )
