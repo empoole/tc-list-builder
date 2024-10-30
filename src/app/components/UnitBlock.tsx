@@ -7,14 +7,18 @@ import { useRosterData } from '@/context/RosterDataContext'
 import { UnitDataProvider } from '@/context/UnitDataContext'
 
 export default function UnitBlock({ unitData }: { unitData: Unit }) {
-    const { faction } = useRosterData()
+    const { faction, ducats, updateRosterData } = useRosterData()
     const units = UnitNamesByFaction[faction]
 
     const updateRoster = (unit: string) => {
         // TODO:
         // get unit data
-        // subtract ducats
-        // if not enough ducats can't add unit
+        const ducatsRemaining = ducats - unitData.ducats
+
+        if (ducatsRemaining < 0) return false
+
+        updateRosterData({ ducats: ducatsRemaining })
+
         return unit
     }
 
