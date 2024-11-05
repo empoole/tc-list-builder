@@ -5,14 +5,15 @@ import StatBlock from './StatBlock'
 import { UnitNamesByFaction } from '@/types/Unit'
 import { useRosterData } from '@/context/RosterDataContext'
 import { UnitDataProvider } from '@/context/UnitDataContext'
+import { useStaticData } from '@/context/StaticDataContext'
 
 export default function UnitBlock({ unitData }: { unitData: Unit }) {
     const { faction, ducats, updateRosterData } = useRosterData()
     const units = UnitNamesByFaction[faction]
+    const { unitsData } = useStaticData()
 
     const updateRoster = (unit: string) => {
-        // TODO:
-        // get unit data
+        // TODO: find unit by name in unitsData
         const ducatsRemaining = ducats - unitData.ducats
 
         if (ducatsRemaining < 0) return false
@@ -46,7 +47,7 @@ export default function UnitBlock({ unitData }: { unitData: Unit }) {
                     <StatBlock unit={unitData} />
                     <section>
                         <label htmlFor="equipment">
-                            Equipment: <input type="text" name="equipment" />
+                            ł Equipment: <input type="text" name="equipment" />
                         </label>
                     </section>
                 </div>
