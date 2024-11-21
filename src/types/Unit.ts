@@ -114,3 +114,5 @@ export const UnitNamesByFaction = {
     'Court of the Seven-Headed Serpent': CourtUnitNames,
     Mercenaries: MercenaryUnitNames,
 }
+
+// Éire

@@ -6,7 +6,10 @@ import { StaticDataProvider } from '@/context/StaticDataContext'
 import { promises as fs } from 'fs'
 
 export default async function Home() {
-    const units = await fs.readFile(`${process.cwd()}/data/Units.json`, 'utf-8')
+    const units = await fs.readFile(
+        `${process.cwd()}/src/data/Units.json`,
+        'utf-8'
+    )
     const unitsData = JSON.parse(units)
 
     return (
